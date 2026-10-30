@@ -1,0 +1,35 @@
+name: Download authorized Telegram covers
+on:
+  push:
+    branches: [main]
+    paths-ignore: [manifest.json, status.json, 'public/covers/**']
+  workflow_dispatch:
+  schedule:
+    - cron: '15 3,9,15,21 * * *'
+concurrency:
+  group: cover-worker
+  cancel-in-progress: false
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read current public catalog and importer
+        run: git clone --depth 1 https://gitverse.ru/NemoBek/lionstudio-3d.git work
+      - name: Refresh public sheet
+        run: python3 work/tools/sync_sheet.py --download
+      - name: Download missing authorized photos
+        run: python3 worker.py
+      - name: Save checked photos and manifest
+        run: |
+          git add -- manifest.json status.json public/
+          if ! git diff --cached --quiet; then
+            git -c user.name=Cover-Sync -c user.email=cover-sync@users.noreply.github.com commit -m "Refresh authorized covers [skip ci]"
+            git push origin HEAD:main
+          fi
+      - name: Report unavailable photos
+        run: |
+          python3 -c "import json; s=json.load(open('status.json')); assert not s['pending'], s['pending']"
