@@ -14,7 +14,49 @@
       "height": 450,
       "sha256": "374e9bb2a07ae4b042801410a62e3e049ed5630c3a09efa2705041f82946cbf0",
       "importedAt": "2026-10-30T21:21:51.559421+00:00"
+    },
+    "887": {
+      "path": "public/covers/887.jpg",
+      "postUrl": "https://t.me/LionStudio3DFilm/887",
+      "status": "approved",
+      "source": "telegram-post-photo",
+      "rightsHolder": "Владелец канала @LionStudio3DFilm; разрешение передано пользователем",
+      "permissionReference": "owner-permission-confirmed-2026-10-26",
+      "scope": "Сайт и Telegram Mini App",
+      "attribution": "Обложка из @LionStudio3DFilm · с разрешения владельца канала.",
+      "width": 800,
+      "height": 450,
+      "sha256": "c70c687a8a6dfb045312637bdefb246d053a017c05415a843b1ec5d8162e917d",
+      "importedAt": "2026-10-31T09:35:15.883694+00:00"
+    },
+    "889": {
+      "path": "public/covers/889.jpg",
+      "postUrl": "https://t.me/LionStudio3DFilm/889",
+      "status": "approved",
+      "source": "telegram-post-photo",
+      "rightsHolder": "Владелец канала @LionStudio3DFilm; разрешение передано пользователем",
+      "permissionReference": "owner-permission-confirmed-2026-10-26",
+      "scope": "Сайт и Telegram Mini App",
+      "attribution": "Обложка из @LionStudio3DFilm · с разрешения владельца канала.",
+      "width": 800,
+      "height": 450,
+      "sha256": "4f0bb0a1f53f070d99536c113087eca18e2c5d695c1ef8ecf06bbcf043412065",
+      "importedAt": "2026-10-31T09:35:17.974636+00:00"
+    },
+    "891": {
+      "path": "public/covers/891.jpg",
+      "postUrl": "https://t.me/LionStudio3DFilm/891",
+      "status": "approved",
+      "source": "telegram-post-photo",
+      "rightsHolder": "Владелец канала @LionStudio3DFilm; разрешение передано пользователем",
+      "permissionReference": "owner-permission-confirmed-2026-10-26",
+      "scope": "Сайт и Telegram Mini App",
+      "attribution": "Обложка из @LionStudio3DFilm · с разрешения владельца канала.",
+      "width": 800,
+      "height": 450,
+      "sha256": "8b6523c784e757e69b499af866ceb730aa7c5453eb4cb2af8e4a554f5d69cdb0",
+      "importedAt": "2026-10-31T09:35:20.123420+00:00"
     }
   },
-  "checkedAt": "2026-10-30T21:21:52.616197+00:00"
+  "checkedAt": "2026-10-31T09:35:21.181940+00:00"
 }
