@@ -12,7 +12,7 @@ concurrency:
 jobs:
   download:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: write
     steps:
@@ -30,6 +30,12 @@ jobs:
             git -c user.name=Cover-Sync -c user.email=cover-sync@users.noreply.github.com commit -m "Refresh authorized covers [skip ci]"
             git push origin HEAD:main
           fi
+      - name: Request GitVerse publication
+        env:
+          GITVERSE_DEPLOY_KEY: ${{ secrets.GITVERSE_DEPLOY_KEY }}
+        run: python3 publish.py --source work
+      - name: Verify the live catalog was published
+        run: python3 publish.py --check
       - name: Report unavailable photos
         run: |
           python3 -c "import json; s=json.load(open('status.json')); assert not s['pending'], s['pending']"
