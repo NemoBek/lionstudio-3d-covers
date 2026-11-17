@@ -1,7 +1,8 @@
 {
-  "checkedAt": "2026-11-16T23:44:27.771974+00:00",
-  "selectedCount": 319,
+  "checkedAt": "2026-11-17T22:52:12.988784+00:00",
+  "selectedCount": 321,
   "counts": {
+    "imported": 2,
     "kept": 319
   },
   "pending": []
