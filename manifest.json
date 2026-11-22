@@ -322,7 +322,21 @@
       "height": 450,
       "sha256": "10b7b96a58fd953bd7e0d76f31859bf37b02ab71df4bfc7e07a1a88b33240013",
       "importedAt": "2026-11-20T11:30:41.825354+00:00"
+    },
+    "943": {
+      "path": "public/covers/943.jpg",
+      "postUrl": "https://t.me/LionStudio3DFilm/943",
+      "status": "approved",
+      "source": "telegram-post-photo",
+      "rightsHolder": "Владелец канала @LionStudio3DFilm; разрешение передано пользователем",
+      "permissionReference": "owner-permission-confirmed-2026-10-26",
+      "scope": "Сайт и Telegram Mini App",
+      "attribution": "Обложка из @LionStudio3DFilm · с разрешения владельца канала.",
+      "width": 800,
+      "height": 450,
+      "sha256": "d91ea51bc65ff46faea9f847ba5b4df50646a1336082942bf2386e782ef77dd1",
+      "importedAt": "2026-11-22T01:15:44.604440+00:00"
     }
   },
-  "checkedAt": "2026-11-20T11:30:42.864134+00:00"
+  "checkedAt": "2026-11-22T01:15:45.653515+00:00"
 }
